@@ -4,8 +4,21 @@ body {
     background-color: #656363; /* El color del fondo de la página web */
     color: #ffffff; /* El color del texto*/ 
 }
+
+@keyframes color-change {
+    0% {
+      color: blue;
+    }
+  
+    50% {
+      color: red;
+    }
+  
+    100% {
+      color: blue;
+    }
+}
+
 h1 {
-    color: #000000; /* El color de la cabecera */
-    font-size: 24px; /* El tamaño de la fuente de la cabecera */
-    font-family: Georgia, serif; /* La familia tipográfica utilizada en la cabecera */
+    animation: color-change 3s infinite;
 }
